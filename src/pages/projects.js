@@ -9,11 +9,11 @@ export default function Projects() {
           <h1 className='text-3xl font-bold'>Howlr</h1>
           <p className='mt-5'>
             A social applicaiton designed to connect pet owners with local
-            events, dog sitters, and other pet-friendly resources. The app is a
-            two-sided marketplace and features the ability to connect with
-            others, discover relevant events and services for one's pets. I
-            integrated with the Google Maps API design and implemented API
-            routes for pet sitters. The project was build with...
+            events, dog sitters, and other pet-friendly resources. The app uses
+            a two-sided marketplace structure. I specifically worked on the
+            Google Maps API integration, sitter discovery page, and search
+            primitives for the site. The project was build with Forhad Zinnah,
+            Allyssa Deorocki, and Nica Weisinger.
           </p>
         </div>
       </div>
