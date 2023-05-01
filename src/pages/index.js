@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import profilePic from 'src/profilePic.png';
 import Link from 'next/link';
+import GithubContributionGraph from '../components/GithubContributionGraph';
 
 export default function Home() {
   return (
@@ -19,10 +20,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class='col-span-2 text-center lg:text-left'>
-          <h1 class='text-4xl font-bold pt-7 ml-5 mt-6'>Hi! I'm Paul 👋</h1>
-          <div class='mt-8 lg:mt-10 ml-5 mr-10'>
-            <p class='text-xl'>
+        <div className='col-span-2 text-center lg:text-left'>
+          <h1 className='text-4xl font-bold pt-7 ml-5 mt-6'>Hi! I'm Paul 👋</h1>
+          <div className='mt-8 lg:mt-10 ml-5 mr-10'>
+            <p className='text-xl'>
               I'm a Software Engineer based in Brooklyn, NY. Prior to
               engineering, I worked in dispute operations at{' '}
               <Link
@@ -36,7 +37,7 @@ export default function Home() {
               , a card issuer processor.
             </p>
             <br />
-            <p class='text-xl'>
+            <p className='text-xl'>
               You can find me on{' '}
               <Link
                 href='https://www.linkedin.com/in/paul-schofield-io/'
@@ -58,14 +59,26 @@ export default function Home() {
               .
             </p>
             <br />
-            <p class='text-xl'>
-              Lastly, I get a ton of value out of books and conversations — feel
-              free to connect and or share high-impact content from your
+            <p className='text-xl'>
+              Finally, I get a ton of value out of books and conversations —
+              feel free to connect and or share high-impact content from your
               bookshelf.
             </p>
             <br />
-            <p class='text-xl'></p>
+            <br />
           </div>
+          <Link
+            href='https://github.com/makeitsough'
+            className='text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              className='ml-5'
+              src='https://ghchart.rshah.org/makeitsough'
+              alt='Github chart'
+            />
+          </Link>
         </div>
       </div>
     </main>
