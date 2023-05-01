@@ -69,8 +69,8 @@ export default function Projects() {
             </Link>
             .
           </p>
-          <div className='flex mx-auto'>
-            <div className='box-content h-32 w-32 p-4'>
+          <div className='flex flex-row '>
+            <div className=' flex-auto p-4'>
               <Image
                 className='object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
                 src={HowlrTM1}
@@ -87,7 +87,7 @@ export default function Projects() {
               )}
             </div>
 
-            <div className='box-content h-32 w-32 p-4'>
+            <div className=' flex-auto p-4'>
               <Image
                 className='object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
                 src={HowlrTM2}
@@ -104,7 +104,7 @@ export default function Projects() {
               )}
             </div>
 
-            <div className='box-content h-32 w-32 p-4'>
+            <div className='box-content flex-auto p-4'>
               <Image
                 className='object-contain object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
                 src={HowlrTM3}
