@@ -62,7 +62,7 @@ export default function Home() {
             </p>
             <br />
             <p className="text-xl">
-              Finally, I get a ton of value out of books and conversations —
+              I get a ton of value out of books and conversations —
               feel free to connect and or share high-impact content from your
               bookshelf.
             </p>
