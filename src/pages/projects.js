@@ -4,8 +4,22 @@ import Link from 'next/link';
 import HowlrTM1 from 'src/howlr1.png';
 import HowlrTM2 from 'src/howlr2.png';
 import HowlrTM3 from 'src/howlr3.png';
+import { useState, useEffect } from 'react';
 
 export default function Projects() {
+  const [enlarged, setEnlarged] = useState(false);
+  const [enlargedImage, setEnlargedImage] = useState(null);
+
+  const toggleEnlarged = (imageSrc) => {
+    if (enlarged) {
+      setEnlarged(false);
+      setEnlargedImage(null);
+    } else {
+      setEnlarged(true);
+      setEnlargedImage(imageSrc);
+    }
+  };
+
   return (
     <main className='h-screen w-full flex flex-col'>
       <Navbar></Navbar>
@@ -56,29 +70,56 @@ export default function Projects() {
             .
           </p>
           <div className='flex mx-auto'>
-            <Image
-              className='mt-5 '
-              src={HowlrTM3}
-              alt='My Photo'
-              width={175}
-              height={150}
-            />
+            <div className='box-content h-32 w-32 p-4'>
+              <Image
+                className='object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
+                src={HowlrTM1}
+                alt='My Photo'
+                onClick={() => toggleEnlarged(HowlrTM1)}
+              />
+              {enlarged && enlargedImage === HowlrTM1 && (
+                <div
+                  className='fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 '
+                  onClick={() => toggleEnlarged(null)}
+                >
+                  <Image src={HowlrTM1} alt='My Photo' />
+                </div>
+              )}
+            </div>
 
-            <Image
-              className='mt-5 ml-5'
-              src={HowlrTM2}
-              alt='My Photo'
-              width={175}
-              height={150}
-            />
+            <div className='box-content h-32 w-32 p-4'>
+              <Image
+                className='object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
+                src={HowlrTM2}
+                alt='My Photo'
+                onClick={() => toggleEnlarged(HowlrTM2)}
+              />
+              {enlarged && enlargedImage === HowlrTM2 && (
+                <div
+                  className='fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 '
+                  onClick={() => toggleEnlarged(null)}
+                >
+                  <Image src={HowlrTM2} alt='My Photo' />
+                </div>
+              )}
+            </div>
 
-            <Image
-              className='mt-5 ml-5'
-              src={HowlrTM1}
-              alt='My Photo'
-              width={175}
-              height={150}
-            />
+            <div className='box-content h-32 w-32 p-4'>
+              <Image
+                className='object-contain object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer'
+                src={HowlrTM3}
+                alt='My Photo'
+                onClick={() => toggleEnlarged(HowlrTM3)}
+              />
+              {enlarged && enlargedImage === HowlrTM3 && (
+                <div
+                  className='fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 '
+                  onClick={() => toggleEnlarged(null)}
+                >
+                  <Image src={HowlrTM3} alt='My Photo' />
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
