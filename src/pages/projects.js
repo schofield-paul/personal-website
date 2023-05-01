@@ -1,4 +1,9 @@
+import Image from 'next/image';
 import Navbar from '../components/Navbar';
+import Link from 'next/link';
+import HowlrTM1 from 'src/howlr1.png';
+import HowlrTM2 from 'src/howlr2.png';
+import HowlrTM3 from 'src/howlr3.png';
 
 export default function Projects() {
   return (
@@ -6,15 +11,75 @@ export default function Projects() {
       <Navbar></Navbar>
       <div className='container mx-auto text-left'>
         <div className='col-span-1 w-3/5 mx-auto mt-20'>
-          <h1 className='text-3xl font-bold'>Howlr</h1>
-          <p className='mt-5'>
-            A social applicaiton designed to connect pet owners with local
-            events, dog sitters, and other pet-friendly resources. The app uses
-            a two-sided marketplace structure. I specifically worked on the
-            Google Maps API integration, sitter discovery page, and search
-            primitives for the site. The project was build with Forhad Zinnah,
-            Allyssa Deorocki, and Nica Weisinger.
+          <h1 className='text-3xl font-bold'>
+            <Link
+              href='https://howlr.netlify.app/'
+              className='text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Howlr
+            </Link>
+          </h1>
+          <p className='mt-4'>
+            A social media application for connecting pet owners with
+            pet-friendly resources, local events and dog sitters. The app uses a
+            two-sided marketplace structure. I specifically worked on the Google
+            Maps API integration, sitter discovery page, and search primitives
+            for the site. The project was build with{' '}
+            <Link
+              href='https://www.linkedin.com/in/forhad-zinnah/'
+              className='text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Forhad Zinnah
+            </Link>
+            {', '}
+            <Link
+              href='https://www.linkedin.com/in/allyssadeorocki/'
+              className='text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Allyssa Deorocki
+            </Link>
+            , and{' '}
+            <Link
+              href='https://www.linkedin.com/in/nica-weisinger/'
+              className='text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Nica Weisinger
+            </Link>
+            .
           </p>
+          <div className='flex mx-auto'>
+            <Image
+              className='mt-5 '
+              src={HowlrTM3}
+              alt='My Photo'
+              width={175}
+              height={150}
+            />
+
+            <Image
+              className='mt-5 ml-5'
+              src={HowlrTM2}
+              alt='My Photo'
+              width={175}
+              height={150}
+            />
+
+            <Image
+              className='mt-5 ml-5'
+              src={HowlrTM1}
+              alt='My Photo'
+              width={175}
+              height={150}
+            />
+          </div>
         </div>
       </div>
     </main>
