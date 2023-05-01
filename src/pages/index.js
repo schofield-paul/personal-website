@@ -75,7 +75,9 @@ export default function Home() {
           >
             <img
               className='ml-5'
-              src='https://ghchart.rshah.org/makeitsough'
+              src='https://ghchart.rshah.org/409ba5/makeitsough'
+              height={300}
+              width={600}
               alt='Github chart'
             />
           </Link>
