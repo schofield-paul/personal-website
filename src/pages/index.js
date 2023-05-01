@@ -22,11 +22,11 @@ export default function Home() {
         </div>
         <div className="col-span-2 text-center lg:text-left">
           <h1 className="text-4xl font-bold pt-7 ml-5 mt-6">
-            Hi! I&apos'm Paul 👋
+            Hi! I&apos;m Paul 👋
           </h1>
           <div className="mt-8 lg:mt-10 ml-5 mr-10">
             <p className="text-xl">
-              I&apos'm a Software Engineer based in Brooklyn, NY. Prior to
+              I&apos;m a Software Engineer based in Brooklyn, NY. Prior to
               engineering, I worked in dispute operations at{' '}
               <Link
                 href="https://www.lithic.com/"
