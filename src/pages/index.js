@@ -7,25 +7,25 @@ export default function Home() {
   return (
     <main className="h-screen w-full flex flex-col bg-gray-100">
       <Navbar />
-      <div className="container mx-auto justify-center">
-        <div className="col-span-1 w-3/5 mx-auto mt-3">
+      <div className="container mx-auto flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center">
           <Image
             className="rounded-full shadow-lg"
             src={profilePic}
             alt="My Photo"
-            width={200}
-            height={200}
+            width={185}
+            height={185}
           />
-        </div>
-        <div>
-          <h1 className="text-4xl font-semibold pt-8 text-gray-800">
-            Hello 👋
-          </h1>
-          <h1 className="text-4xl pt-4 font-semibold text-gray-800">
-            I&apos;m Paul.
-          </h1>
-          <div className="mt-9">
-            <p className="text-xl w-full md:w-3/5 text-left text-gray-800">
+          <div className="text-center">
+            <h1 className="text-4xl font-medium pt-8 text-gray-700">
+              Hello 👋
+            </h1>
+            <h1 className="text-4xl font-medium pt-2 pl-2 text-gray-700">
+              I&apos;m Paul.
+            </h1>
+          </div>
+          <div className="col-span text-left">
+            <p className="text-gray-600 max-w-md text-left text-xl pt-6">
               I&apos;m a Software Engineer based in Brooklyn, NY. Prior to
               engineering, I worked in dispute operations at{' '}
               <Link
@@ -39,7 +39,7 @@ export default function Home() {
               , a card issuer processor.
             </p>
             <br />
-            <p className="text-xl w-full md:w-3/5 text-gray-800">
+            <p className="text-gray-600 max-w-md m-0 text-left text-xl pt-4">
               You can find me on{' '}
               <Link
                 href="https://www.linkedin.com/in/paul-schofield-io/"
@@ -61,31 +61,82 @@ export default function Home() {
               .
             </p>
             <br />
-            <p className="text-xl w-full md:w-3/5  text-gray-800">
+            <p className="text-gray-600 max-w-md ml-0 text-left text-xl pt-4">
+              {' '}
               I get a ton of value out of books and conversations — feel free to
               connect and or share high-impact content from your bookshelf.
             </p>
-            <br />
-            <br />
           </div>
+          <Link
+            href="https://github.com/makeitsough"
+            className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="text-center pt-8">
+              <div className="mx-auto overflow-hidden max-w-full shadow-sm">
+                <img
+                  className="mx-auto"
+                  src="https://ghchart.rshah.org/409ba5/makeitsough"
+                  height={300}
+                  width={600}
+                  alt="Github chart"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+          </Link>
         </div>
-        <Link
-          href="https://github.com/makeitsough"
-          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="overflow-hidden max-w-full shadow-sm">
-            <img
-              className="ml-5 "
-              src="https://ghchart.rshah.org/409ba5/makeitsough"
-              height={300}
-              width={600}
-              alt="Github chart"
-            />
-          </div>
-        </Link>
       </div>
     </main>
   );
 }
+
+{
+  <Link
+    href="https://github.com/makeitsough"
+    className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="overflow-hidden max-w-full shadow-sm">
+      <img
+        className="ml-5 "
+        src="https://ghchart.rshah.org/409ba5/makeitsough"
+        height={300}
+        width={600}
+        alt="Github chart"
+      />
+    </div>
+  </Link>;
+}
+
+/*   <p className="text-gray-600 max-w-md m-0 text-left pt-4">
+You can find me on{' '}
+<Link
+  href="https://www.linkedin.com/in/paul-schofield-io/"
+  className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Linkedin
+</Link>{' '}
+or{' '}
+<Link
+  href="https://github.com/makeitsough"
+  className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  GitHub
+</Link>
+.
+</p>
+<br />
+<p className="text-gray-600 max-w-md ml-0 text-left pt-4">
+{' '}
+I get a ton of value out of books and conversations — feel free to
+connect and or share high-impact content from your bookshelf.
+</p>
+
+*/
