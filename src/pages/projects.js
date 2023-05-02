@@ -24,7 +24,7 @@ export default function Projects() {
   };
 
   return (
-    <main className="h-screen w-full flex flex-col bg-white">
+    <main className="h-screen w-full flex flex-col bg-gray-50">
       <Navbar></Navbar>
       <div className="container mx-auto text-left">
         <div className="col-span-1 w-3/5 mx-auto mt-20">

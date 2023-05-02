@@ -5,24 +5,27 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="h-screen w-full flex flex-col bg-white">
+    <main className="h-screen w-full flex flex-col bg-gray-100">
       <Navbar />
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
-        <div className="md:w-2/5 flex justify-center mt-10">
-          <div className="rounded-full overflow-hidden p-6">
-            <Image
-              className="rounded-full"
-              src={profilePic}
-              alt="My Photo"
-              width={205}
-              height={205}
-            />
-          </div>
+      <div className="container mx-auto justify-center">
+        <div className="col-span-1 w-3/5 mx-auto mt-3">
+          <Image
+            className="rounded-full shadow-lg"
+            src={profilePic}
+            alt="My Photo"
+            width={200}
+            height={200}
+          />
         </div>
-        <div className="md:w-3/5 flex flex-col justify-center p-5">
-          <h1 className="text-4xl font-bold pt-7">Hi! I&apos;m Paul 👋</h1>
-          <div className="mt-8">
-            <p className="text-xl w-full md:w-3/5">
+        <div>
+          <h1 className="text-4xl font-semibold pt-8 text-gray-800">
+            Hello 👋
+          </h1>
+          <h1 className="text-4xl pt-4 font-semibold text-gray-800">
+            I&apos;m Paul.
+          </h1>
+          <div className="mt-9">
+            <p className="text-xl w-full md:w-3/5 text-left text-gray-800">
               I&apos;m a Software Engineer based in Brooklyn, NY. Prior to
               engineering, I worked in dispute operations at{' '}
               <Link
@@ -36,7 +39,7 @@ export default function Home() {
               , a card issuer processor.
             </p>
             <br />
-            <p className="text-xl w-full md:w-3/5">
+            <p className="text-xl w-full md:w-3/5 text-gray-800">
               You can find me on{' '}
               <Link
                 href="https://www.linkedin.com/in/paul-schofield-io/"
@@ -58,28 +61,30 @@ export default function Home() {
               .
             </p>
             <br />
-            <p className="text-xl w-full md:w-3/5">
+            <p className="text-xl w-full md:w-3/5  text-gray-800">
               I get a ton of value out of books and conversations — feel free to
               connect and or share high-impact content from your bookshelf.
             </p>
             <br />
             <br />
           </div>
-          <Link
-            href="https://github.com/makeitsough"
-            className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        </div>
+        <Link
+          href="https://github.com/makeitsough"
+          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="overflow-hidden max-w-full shadow-sm">
             <img
-              className="ml-5"
+              className="ml-5 "
               src="https://ghchart.rshah.org/409ba5/makeitsough"
               height={300}
               width={600}
               alt="Github chart"
             />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </main>
   );
