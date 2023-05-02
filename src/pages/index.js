@@ -2,30 +2,30 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import profilePic from 'src/profilePic.png';
 import Link from 'next/link';
-import GithubContributionGraph from '../components/GithubContributionGraph';
 
 export default function Home() {
   return (
-    <main className="h-screen w-full flex flex-col">
+    <main className="h-screen w-full flex flex-col bg-gray-100">
       <Navbar />
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-1 flex justify-center items-center">
-          <div className="rounded-full overflow-hidden p-6">
-            <Image
-              className="rounded-full"
-              src={profilePic}
-              alt="My Photo"
-              width={205}
-              height={205}
-            />
+      <div className="container mx-auto flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center">
+          <Image
+            className="rounded-full shadow-lg"
+            src={profilePic}
+            alt="My Photo"
+            width={185}
+            height={185}
+          />
+          <div className="text-center">
+            <h1 className="text-4xl font-medium pt-8 text-gray-700">
+              Hello 👋
+            </h1>
+            <h1 className="text-4xl font-medium pt-2 pl-2 text-gray-700">
+              I&apos;m Paul.
+            </h1>
           </div>
-        </div>
-        <div className="col-span-2 text-center lg:text-left">
-          <h1 className="text-4xl font-bold pt-7 ml-5 mt-6">
-            Hi! I&apos;m Paul 👋
-          </h1>
-          <div className="mt-8 lg:mt-10 ml-5 mr-10">
-            <p className="text-xl">
+          <div className="col-span text-left">
+            <p className="text-gray-600 max-w-md text-left text-xl pt-6">
               I&apos;m a Software Engineer based in Brooklyn, NY. Prior to
               engineering, I worked in dispute operations at{' '}
               <Link
@@ -39,7 +39,7 @@ export default function Home() {
               , a card issuer processor.
             </p>
             <br />
-            <p className="text-xl">
+            <p className="text-gray-600 max-w-md m-0 text-left text-xl pt-4">
               You can find me on{' '}
               <Link
                 href="https://www.linkedin.com/in/paul-schofield-io/"
@@ -61,13 +61,11 @@ export default function Home() {
               .
             </p>
             <br />
-            <p className="text-xl">
-              I get a ton of value out of books and conversations —
-              feel free to connect and or share high-impact content from your
-              bookshelf.
+            <p className="text-gray-600 max-w-md ml-0 text-left text-xl pt-4">
+              {' '}
+              I get a ton of value out of books and conversations — feel free to
+              connect and or share high-impact content from your bookshelf.
             </p>
-            <br />
-            <br />
           </div>
           <Link
             href="https://github.com/makeitsough"
@@ -75,13 +73,18 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="ml-5"
-              src="https://ghchart.rshah.org/409ba5/makeitsough"
-              height={300}
-              width={600}
-              alt="Github chart"
-            />
+            <div className="text-center pt-8">
+              <div className="mx-auto overflow-hidden max-w-full shadow-sm">
+                <img
+                  className="mx-auto"
+                  src="https://ghchart.rshah.org/409ba5/makeitsough"
+                  height={300}
+                  width={600}
+                  alt="Github chart"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
           </Link>
         </div>
       </div>
