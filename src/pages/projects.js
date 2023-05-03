@@ -140,7 +140,7 @@ export default function Projects() {
             An ecommerce website inspired by Amazon. Features include guest
             checkout, easy navigability, and admin persmissions. I specifically
             built the checkout and admin API routes and components. The project
-            was build with Karsten Fisk, Ben Agalliu, and Stephen Shih.
+            was built with Karsten Fisk, Ben Agalliu, and Stephen Shih.
           </p>
           <div className="flex flex-row ">
             <div className=" flex-auto p-4">
