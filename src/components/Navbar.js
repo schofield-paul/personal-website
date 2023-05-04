@@ -10,10 +10,10 @@ export default function Navbar() {
       </div>
       <div className="flex justify-right items-center">
         <p className="text-gray-800 font-medium text-lg mt-5 mr-6 hover:text-blue-400 transition duration-200 ease-in-out">
-          <Link href="/">About</Link>
+          <Link href="/projects">Projects</Link>
         </p>
         <p className="text-gray-800 font-medium text-lg mt-5 mr-6 hover:text-blue-400 transition duration-200 ease-in-out">
-          <Link href="/projects">Projects</Link>
+          <Link href="/readinglist">Reading List</Link>
         </p>
       </div>
     </div>

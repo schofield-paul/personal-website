@@ -23,7 +23,7 @@ export default function ProjectHwr() {
       <h1 className="text-3xl font-bold">
         <Link
           href="https://howlr.netlify.app/"
-          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out border"
+          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
           target="_blank"
           rel="noopener noreferrer"
         >
