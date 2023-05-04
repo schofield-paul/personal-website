@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="h-screen w-screen bg-gray-100">
+      <main className="min-h-screen w-full bg-gray-100">
         <div className="container mx-auto flex flex-col">
           <div className="flex flex-col items-center">
             <Image
@@ -25,7 +25,7 @@ export default function Home() {
                 I&apos;m Paul.
               </h1>
             </div>
-            <div className="max-w-lg text-left text-xl text-gray-600">
+            <div className="max-w-xl text-left text-xl px-2 text-gray-600">
               <p className="pt-6">
                 I&apos;m a Software Engineer based in Brooklyn, NY. Prior to
                 engineering, I worked in dispute operations at{' '}
@@ -76,7 +76,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <img
-              className="mx-auto shadow-sm pt-16"
+              className="mx-auto shadow-sm pt-16 pb-16"
               src="https://ghchart.rshah.org/409ba5/makeitsough"
               height={300}
               width={600}
