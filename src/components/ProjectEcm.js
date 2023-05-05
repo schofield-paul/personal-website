@@ -34,7 +34,34 @@ export default function ProjectEcm() {
         An ecommerce website inspired by Amazon. Features include guest
         checkout, easy navigability, and admin persmissions. I specifically
         built the checkout and admin API routes and components. The project was
-        built with Karsten Fisk, Ben Agalliu, and Stephen Shih.
+        built with{' '}
+        <Link
+          href="https://www.linkedin.com/in/karstenfisk/"
+          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Karsten Fisk
+        </Link>
+        ,{' '}
+        <Link
+          href="https://www.linkedin.com/in/benjamin-agalliu/"
+          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Benjamin Agalliu
+        </Link>
+        , and{' '}
+        <Link
+          href="https://www.linkedin.com/in/sshih1116/"
+          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Stephen Shih
+        </Link>
+        .
       </p>
       <div className="flex flex-row justify-between">
         <div className="w-1/3 p-4">
