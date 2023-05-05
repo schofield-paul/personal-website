@@ -68,17 +68,19 @@ export default function ProjectHwr() {
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="h-full w-full object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={HowlrTM1}
               alt="My Photo"
               onClick={() => toggleEnlarged(HowlrTM1)}
             />
             {enlarged && enlargedImage === HowlrTM1 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={HowlrTM1} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={HowlrTM1} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>
@@ -87,17 +89,19 @@ export default function ProjectHwr() {
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="h-full w-full object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={HowlrTM2}
               alt="My Photo"
               onClick={() => toggleEnlarged(HowlrTM2)}
             />
             {enlarged && enlargedImage === HowlrTM2 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={HowlrTM2} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={HowlrTM2} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>
@@ -106,17 +110,19 @@ export default function ProjectHwr() {
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="h-full w-full object-contain object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={HowlrTM3}
               alt="My Photo"
               onClick={() => toggleEnlarged(HowlrTM3)}
             />
             {enlarged && enlargedImage === HowlrTM3 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={HowlrTM3} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={HowlrTM3} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>

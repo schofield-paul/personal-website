@@ -36,21 +36,23 @@ export default function ProjectEcm() {
         built the checkout and admin API routes and components. The project was
         built with Karsten Fisk, Ben Agalliu, and Stephen Shih.
       </p>
-      <div className="flex flex-row justify-items-center items-center">
+      <div className="flex flex-row justify-between">
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={ecom1}
               alt="My Photo"
               onClick={() => toggleEnlarged(ecom1)}
             />
             {enlarged && enlargedImage === ecom1 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={ecom1} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={ecom1} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>
@@ -58,17 +60,19 @@ export default function ProjectEcm() {
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="object-contain object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={ecom2}
               alt="My Photo"
               onClick={() => toggleEnlarged(ecom2)}
             />
             {enlarged && enlargedImage === ecom2 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={ecom2} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={ecom2} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>
@@ -76,17 +80,19 @@ export default function ProjectEcm() {
         <div className="w-1/3 p-4">
           <div className="h-full w-full">
             <Image
-              className="object-contain object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
               src={ecom3}
               alt="My Photo"
               onClick={() => toggleEnlarged(ecom3)}
             />
             {enlarged && enlargedImage === ecom3 && (
               <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 "
+                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
                 onClick={() => toggleEnlarged(null)}
               >
-                <Image src={ecom3} alt="My Photo" />
+                <div className="max-w-2xl">
+                  <Image src={ecom3} alt="My Photo" />
+                </div>
               </div>
             )}
           </div>

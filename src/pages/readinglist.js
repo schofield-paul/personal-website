@@ -17,15 +17,16 @@ export default function ReadingList() {
               <div className="max-w-xl pb-3 pt-3 text-left text-xl leading-relaxed text-gray-700">
                 <b className="pt-3">Currently Reading:</b>
                 <li>
+                  {' '}
                   <Link
-                    href="https://www.amazon.com/Building-Career-Software-Comprehensive-Industry/dp/1484261461"
+                    href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX/ref=sr_1_1?crid=392D0IDM324AG&keywords=the+clean+coder&qid=1683230221&s=books&sprefix=the+clean+coder%2Cstripbooks%2C96&sr=1-1"
                     className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Building a Career in Software
+                    The Clean Coder
                   </Link>{' '}
-                  - Daniel Heller
+                  - Robert Martin
                 </li>
               </div>
               <div className="max-w-xl pb-3 pt-1 text-left text-xl leading-relaxed text-gray-700">
@@ -103,6 +104,17 @@ export default function ReadingList() {
                   A Guide for Tech Leaders Navigating Growth and Change -
                   Camille Fournier
                 </li>
+                <li>
+                  <Link
+                    href="https://www.amazon.com/Building-Career-Software-Comprehensive-Industry/dp/1484261461"
+                    className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Building a Career in Software
+                  </Link>{' '}
+                  - Daniel Heller
+                </li>
                 <div className="max-w-xl pb-3 pt-3 text-left text-xl leading-relaxed text-gray-700">
                   <b className="pt-3">Queue:</b>
                   <li>
@@ -115,18 +127,6 @@ export default function ReadingList() {
                       Getting Things Done
                     </Link>{' '}
                     - Davind Allan
-                  </li>
-                  <li>
-                    {' '}
-                    <Link
-                      href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX/ref=sr_1_1?crid=392D0IDM324AG&keywords=the+clean+coder&qid=1683230221&s=books&sprefix=the+clean+coder%2Cstripbooks%2C96&sr=1-1"
-                      className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      The Clean Coder
-                    </Link>{' '}
-                    - Robert Martin
                   </li>
                 </div>
               </div>
