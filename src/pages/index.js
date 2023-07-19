@@ -69,21 +69,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <Link
-            href="https://github.com/makeitsough"
-            className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="mx-auto shadow-sm pt-16 pb-16"
-              src="http://ghchart.rshah.org/409ba5/makeitsough"/>
-              height={300}
-              width={600}
-              alt="Github chart"
-              style={{ objectFit: 'cover' }}
-            />
-          </Link>
         </div>
       </main>
     </div>
