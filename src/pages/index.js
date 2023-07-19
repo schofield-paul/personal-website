@@ -77,7 +77,7 @@ export default function Home() {
           >
             <img
               className="mx-auto shadow-sm pt-16 pb-16"
-              src="https://ghchart.rshah.org/409ba5/makeitsough"
+              src="http://ghchart.rshah.org/409ba5/makeitsough"/>
               height={300}
               width={600}
               alt="Github chart"
