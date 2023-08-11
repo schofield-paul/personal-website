@@ -19,14 +19,14 @@ export default function ReadingList() {
                 <li>
                   {' '}
                   <Link
-                    href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX/ref=sr_1_1?crid=392D0IDM324AG&keywords=the+clean+coder&qid=1683230221&s=books&sprefix=the+clean+coder%2Cstripbooks%2C96&sr=1-1"
+                    href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X"
                     className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    The Clean Coder
+                    The Pragmatic Programmer
                   </Link>{' '}
-                  - Robert Martin
+                  - Andrew Hunt & David Thomas
                 </li>
               </div>
               <div className="max-w-xl pb-3 pt-1 text-left text-xl leading-relaxed text-gray-700">
@@ -114,6 +114,18 @@ export default function ReadingList() {
                     Building a Career in Software
                   </Link>{' '}
                   - Daniel Heller
+                </li>
+                <li>
+                  {' '}
+                  <Link
+                    href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX/ref=sr_1_1?crid=392D0IDM324AG&keywords=the+clean+coder&qid=1683230221&s=books&sprefix=the+clean+coder%2Cstripbooks%2C96&sr=1-1"
+                    className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The Clean Coder
+                  </Link>{' '}
+                  - Robert Martin
                 </li>
                 <div className="max-w-xl pb-3 pt-3 text-left text-xl leading-relaxed text-gray-700">
                   <b className="pt-3">Queue:</b>
