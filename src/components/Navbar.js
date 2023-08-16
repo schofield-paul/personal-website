@@ -25,7 +25,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faBars} />
         </p>
         {dropdownVisible && (
-          <div className="absolute right-0 mt-2 bg-white border border-gray-300 rounded shadow">
+          <div className="absolute right-2 mt-2 bg-white border border-gray-300 rounded shadow">
             <p className="block px-4 py-2 text-gray-800 hover:bg-blue-100 transition duration-200 ease-in-out">
               <Link href="/projects">Projects</Link>
             </p>
