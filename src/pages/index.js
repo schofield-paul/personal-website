@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen w-full bg-gray-50">
+      <main className="min-h-screen w-full bg-white">
         <div className="container mx-auto flex flex-col">
           <div className="flex flex-col items-center">
             <Image
@@ -20,9 +20,6 @@ export default function Home() {
             <div className="text-center">
               <h1 className="text-4xl font-medium pt-8 text-gray-700">
                 Hello 👋
-              </h1>
-              <h1 className="text-4xl font-medium pt-2 pl-2 text-gray-700">
-                I&apos;m Paul.
               </h1>
             </div>
             <div className="max-w-xl text-left text-xl px-2 text-gray-600">

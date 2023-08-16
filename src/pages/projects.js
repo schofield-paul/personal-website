@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen w-full bg-gray-50">
+      <main className="min-h-screen w-full bg-white">
         <div className="container flex flex-col mx-auto text-left">
           <ProjectRsm></ProjectRsm>
           <ProjectHwr></ProjectHwr>
