@@ -5,7 +5,7 @@ export default function ReadingList() {
   return (
     <div>
       <Navbar />
-      <div className="min-h-screen w-full bg-gray-50">
+      <div className="min-h-screen w-full bg-white">
         <div className="container mx-auto flex flex-col text-left">
           <div className="col-span-1 mx-auto mt-20 w-3/5">
             <h1 className="text-3xl font-bold text-gray-800">Reading List</h1>
