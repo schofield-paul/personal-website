@@ -19,3 +19,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animated-background {
+  animation: fadeInOut 5s infinite;
+  background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+}
