@@ -6,8 +6,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 214, 219, 220;
 }
 
 body {
@@ -18,19 +18,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-@keyframes fadeInOut {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.animated-background {
-  animation: fadeInOut 5s infinite;
-  background: linear-gradient(to bottom, #f7f7f7, #ffffff);
 }

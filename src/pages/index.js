@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen w-full animated-background">
+      <main className="min-h-screen w-full">
         <div className="container mx-auto flex flex-col">
           <div className="flex flex-col items-center">
             <Image
