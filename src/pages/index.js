@@ -72,8 +72,8 @@ export default function Home() {
             >
               Linkedin
             </Link>{' '}
-            or paul.schofield.us at gmail if you'd like to connect - how can I
-            be helpful?
+            or paul.schofield.us at gmail if you'd like to connect - always
+            happy to chat
           </p>
         </div>
         <Link
