@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="mx-auto max-w-2xl text-center">
+      <main className="mx-auto max-w-2xl mb-20 text-center">
         <Image
           className="rounded-full shadow-lg mx-auto"
           src={profilePic}
@@ -92,6 +92,8 @@ export default function Home() {
           Projects
         </h1>
         <ProjectRsm></ProjectRsm>
+        <ProjectHwr></ProjectHwr>
+        <ProjectEcm></ProjectEcm>
       </main>
     </div>
   );

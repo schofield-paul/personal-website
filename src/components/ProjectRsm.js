@@ -18,8 +18,15 @@ export default function ProjectHwr() {
       setEnlargedImage(imageSrc);
     }
   };
+
+  const images = [
+    { src: ResmTM1, alt: 'My Photo' },
+    { src: ResmTM2, alt: 'My Photo' },
+    { src: ResmTM3, alt: 'My Photo' },
+  ];
+
   return (
-    <div className="mx-auto mt-8 mb-24">
+    <div className="mx-auto mt-8 mb-16">
       <h1 className="text-3xl font-semibold">
         <Link
           href="https://paulschofieldresume.com/"
@@ -54,69 +61,29 @@ export default function ProjectHwr() {
         </Link>
         {'. '}
       </p>
-      <div className="flex flex-row justify-between">
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={ResmTM1}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(ResmTM1)}
-            />
-            {enlarged && enlargedImage === ResmTM1 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={ResmTM1} alt="My Photo" />
+      <div className="flex flex-row justify-between pt-4">
+        {images.map((image, index) => (
+          <div className="w-1/3 p-4" key={index}>
+            <div className="h-full w-full">
+              <Image
+                className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+                src={image.src}
+                alt={image.alt}
+                onClick={() => toggleEnlarged(image.src)}
+              />
+              {enlarged && enlargedImage === image.src && (
+                <div
+                  className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
+                  onClick={() => toggleEnlarged(null)}
+                >
+                  <div className="max-w-2xl">
+                    <Image src={image.src} alt={image.alt} />
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
-        </div>
-
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={ResmTM2}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(ResmTM2)}
-            />
-            {enlarged && enlargedImage === ResmTM2 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={ResmTM2} alt="My Photo" />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={ResmTM3}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(ResmTM3)}
-            />
-            {enlarged && enlargedImage === ResmTM3 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={ResmTM3} alt="My Photo" />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
