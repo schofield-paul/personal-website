@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ResmTM1 from 'src/resm1.png';
-import ResmTM2 from 'src/resm2.png';
-import ResmTM3 from 'src/resm3.png';
+import ResmTM1 from 'src/assets/resm1.png';
+import ResmTM2 from 'src/assets/resm2.png';
+import ResmTM3 from 'src/assets/resm3.png';
 import { useState, useEffect } from 'react';
 
 export default function ProjectHwr() {
@@ -19,8 +19,8 @@ export default function ProjectHwr() {
     }
   };
   return (
-    <div className="col-span-1 w-3/5 mx-auto mt-20">
-      <h1 className="text-3xl font-bold">
+    <div className="mx-auto mt-8 mb-24">
+      <h1 className="text-3xl font-semibold">
         <Link
           href="https://paulschofieldresume.com/"
           className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
@@ -30,7 +30,7 @@ export default function ProjectHwr() {
           Cloud Resume
         </Link>
       </h1>
-      <p className="mt-4">
+      <p className="mt-6">
         A serverless website deployed using AWS Lambda, DynamoDB, CloudFront
         edge distributions and CI/CD actions with infrastructure-as-code. See
         link to the cloud resume challenge{' '}

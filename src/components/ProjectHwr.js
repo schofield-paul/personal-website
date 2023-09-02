@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HowlrTM1 from 'src/howlr1.png';
-import HowlrTM2 from 'src/howlr2.png';
-import HowlrTM3 from 'src/howlr3.png';
+import HowlrTM1 from 'src/assets/howlr1.png';
+import HowlrTM2 from 'src/assets/howlr2.png';
+import HowlrTM3 from 'src/assets/howlr3.png';
 import { useState, useEffect } from 'react';
 
 export default function ProjectHwr() {

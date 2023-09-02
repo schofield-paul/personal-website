@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ecom1 from 'src/ecom1.png';
-import ecom2 from 'src/ecom2.png';
-import ecom3 from 'src/ecom3.png';
+import ecom1 from 'src/assets/ecom1.png';
+import ecom2 from 'src/assets/ecom2.png';
+import ecom3 from 'src/assets/ecom3.png';
 import { useState, useEffect } from 'react';
 
 export default function ProjectEcm() {
