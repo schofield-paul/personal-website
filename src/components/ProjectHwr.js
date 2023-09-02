@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HowlrTM1 from 'src/howlr1.png';
-import HowlrTM2 from 'src/howlr2.png';
-import HowlrTM3 from 'src/howlr3.png';
+import HowlrTM1 from 'src/assets/howlr1.png';
+import HowlrTM2 from 'src/assets/howlr2.png';
+import HowlrTM3 from 'src/assets/howlr3.png';
 import { useState, useEffect } from 'react';
 
 export default function ProjectHwr() {
@@ -18,9 +18,16 @@ export default function ProjectHwr() {
       setEnlargedImage(imageSrc);
     }
   };
+
+  const images = [
+    { src: HowlrTM1, alt: 'My Photo' },
+    { src: HowlrTM2, alt: 'My Photo' },
+    { src: HowlrTM3, alt: 'My Photo' },
+  ];
+
   return (
-    <div className="col-span-1 w-3/5 mx-auto mt-20">
-      <h1 className="text-3xl font-bold">
+    <div className="mx-auto mt-8 mb-16">
+      <h1 className="text-3xl font-semibold">
         <Link
           href="https://howlr.netlify.app/"
           className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
@@ -30,7 +37,7 @@ export default function ProjectHwr() {
           Howlr
         </Link>
       </h1>
-      <p className="mt-4">
+      <p className="mt-6">
         A social media application for connecting pet owners with pet-friendly
         resources, local events and dog sitters. The app uses a two-sided
         marketplace structure. I specifically worked on the Google Maps API
@@ -64,70 +71,32 @@ export default function ProjectHwr() {
         </Link>
         .
       </p>
-      <div className="flex flex-row justify-between">
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={HowlrTM1}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(HowlrTM1)}
-            />
-            {enlarged && enlargedImage === HowlrTM1 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={HowlrTM1} alt="My Photo" />
-                </div>
+      {
+        <div className="flex flex-row justify-between">
+          {images.map((image, index) => (
+            <div className="w-1/3 p-4" key={index}>
+              <div className="h-full w-full">
+                <Image
+                  className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
+                  src={image.src}
+                  alt={image.alt}
+                  onClick={() => toggleEnlarged(image.src)}
+                />
+                {enlarged && enlargedImage === image.src && (
+                  <div
+                    className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
+                    onClick={() => toggleEnlarged(null)}
+                  >
+                    <div className="max-w-2xl">
+                      <Image src={image.src} alt={image.alt} />
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            </div>
+          ))}
         </div>
-
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={HowlrTM2}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(HowlrTM2)}
-            />
-            {enlarged && enlargedImage === HowlrTM2 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={HowlrTM2} alt="My Photo" />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="w-1/3 p-4">
-          <div className="h-full w-full">
-            <Image
-              className="h-full w-full object-cover object-center  hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
-              src={HowlrTM3}
-              alt="My Photo"
-              onClick={() => toggleEnlarged(HowlrTM3)}
-            />
-            {enlarged && enlargedImage === HowlrTM3 && (
-              <div
-                className="fixed top-0 left-0 h-screen w-screen bg-black bg-opacity-50 flex items-center justify-center z-50 max-w-screen"
-                onClick={() => toggleEnlarged(null)}
-              >
-                <div className="max-w-2xl">
-                  <Image src={HowlrTM3} alt="My Photo" />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+      }
     </div>
   );
 }
