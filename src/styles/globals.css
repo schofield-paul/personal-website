@@ -19,3 +19,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.emoji {
+  opacity: 0.5;
+}
+
+.github-link {
+  display: inline-block;
+  padding: 5px;
+}
