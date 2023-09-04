@@ -20,24 +20,24 @@ export default function ProjectHwr() {
   };
 
   const images = [
+    { src: HowlrTM3, alt: 'My Photo' },
     { src: HowlrTM1, alt: 'My Photo' },
     { src: HowlrTM2, alt: 'My Photo' },
-    { src: HowlrTM3, alt: 'My Photo' },
   ];
 
   return (
-    <div className="mx-auto mt-8 mb-16">
-      <h1 className="text-3xl font-semibold">
+    <div className="mx-auto mt-2 mb-16">
+      <h1 className="text-3xl font-light pt-3 px-1 text-left ">
         <Link
           href="https://howlr.netlify.app/"
-          className="text-blue-400 hover:text-orange-700 transition duration-200 ease-in-out"
+          className="text-slate-400 hover:text-orange-700 transition duration-200 ease-in-out"
           target="_blank"
           rel="noopener noreferrer"
         >
           Howlr
         </Link>
       </h1>
-      <p className="mt-6">
+      <p className="text-left text-xl pt-4 px-1 text-slate-400 font-light">
         A social media application for connecting pet owners with pet-friendly
         resources, local events and dog sitters. The app uses a two-sided
         marketplace structure. I specifically worked on the Google Maps API
@@ -72,9 +72,9 @@ export default function ProjectHwr() {
         .
       </p>
       {
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-around pt-1 px-1">
           {images.map((image, index) => (
-            <div className="w-1/3 p-4" key={index}>
+            <div className="w-1/3 p-4 m-2 flex-shrink-0" key={index}>
               <div className="h-full w-full">
                 <Image
                   className="h-full w-full object-cover object-center hover:opacity-75 transition duration-200 ease-in-out cursor-pointer border border-gray-200"
