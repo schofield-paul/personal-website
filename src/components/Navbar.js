@@ -5,12 +5,15 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center">
-      <div className="flex items-center mr-auto">
-        <p className="text-gray-800 font-medium text-lg mt-5 ml-5 hover:text-blue-400 transition duration-200 ease-in-out">
-          <Link href="/">Paul Schofield</Link>
-        </p>
-      </div>
+    <div className=" justify-between items-center bg-cyan-950">
+      <Link
+        href="https://www.linkedin.com/in/paul-schofield-io/"
+        className="inline text-slate-50 font-normal text-sm pt-1.5 pb-1.5 pl-6 hover:text-sky-500 transition duration-300 ease-in-out"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Paul Schofield
+      </Link>
     </div>
   );
 }
