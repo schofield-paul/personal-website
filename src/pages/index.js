@@ -35,7 +35,7 @@ export default function Home() {
             Hey there, <span className="emoji">👋</span>.
             <br />
           </p>
-          <p className="pt-5">I'm a software Engineer living in NYC 🗽</p>
+          <p className="pt-5">I'm a software engineer living in NYC 🗽</p>
           <p className="pt-5">
             Prior startup experience at{' '}
             <Link
