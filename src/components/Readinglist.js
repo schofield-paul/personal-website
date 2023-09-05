@@ -7,7 +7,7 @@ export default function ReadingList() {
         Reading List
       </h1>
       <p className="max-w-xl pl-2.5 pb-5 text-left text-xl text-slate-400 pt-5">
-        Software books I've found most impactful:
+        Software books that I've found most impactful:
       </p>
 
       <div className="text-left text-xl px-3 text-slate-400 font-light">
