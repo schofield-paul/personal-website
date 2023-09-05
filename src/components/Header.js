@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function Header() {
   return (
     <div className="bg-opacity-75 fixed w-full top-0 pt-0.5 pb-1 transition duration-300 ease-in-out bg-slate-500">
       <Link

@@ -3,7 +3,8 @@ import ProjectHwr from '../components/ProjectHwr';
 import ProjectEcm from '../components/ProjectEcm';
 import ProjectRsm from '../components/ProjectRsm';
 import Readinglist from '../components/Readinglist';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { FaGithub } from 'react-icons/fa';
 import React from 'react';
 
@@ -25,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="bg-sky-950">
-      <Navbar />
+      <Header />
       <main className="mx-auto max-w-2xl pb-10 px-4 pt-5">
         <div className="pt-5 pl-2">
           <span className="cursor-pointer" onClick={handleScrollToSecondDiv}>
@@ -110,10 +111,8 @@ export default function Home() {
           </span>
         </div>
         <Readinglist />
-        <div className="text-center text-xl pt-6 text-slate-500 font-light">
-          Bye! 👋
-        </div>
       </main>
+      <Footer />
     </div>
   );
 }
